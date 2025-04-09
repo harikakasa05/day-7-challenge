@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('background.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+}
+
+h2 {
+    margin-bottom: 20px;
+} 
+.input{
+    position: relative;
+    margin: 15px 0;
+}
+.input input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid white;
+    color: white;
+    font-size: 16px;
+}
+
+.input label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s ease-in-out;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.input input:focus + label,
+.input input:valid + label {
+    top: 0;
+    font-size: 12px;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
